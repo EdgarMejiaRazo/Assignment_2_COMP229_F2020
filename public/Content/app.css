@@ -1,0 +1,45 @@
+/*body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+*}/
+
+/*-- Assignment 1 Web Application Development COMP229 Edgar Adrian Mejia Razo Centennial College 301066027 WINTER 2020 */
+
+
+/*custom css goes here*/
+body{
+  background-color: antiquewhite;
+}
+
+
+form {
+  --background-color: rgb(255, 0, 0) ;
+  --border: rgba(0, 0, 0, 0.125);
+  --borderDark: rgba(0, 0, 0, 0.25);
+  --borderDarker: rgba(0, 0, 0, 0.5);
+  --bgColorH: 0;
+  --bgColorS: 0%;
+  --bgColorL: 98%;
+  --fgColorH: 210;
+  --fgColorS: 50%;
+  --fgColorL: 38%;
+  --shadeDark: 0.3;
+  --shadeLight: 0.7;
+  --shadeNormal: 0.5;
+  --borderRadius: 0.125rem;
+  --highlight: #306090;
+  background: rgb(230, 142, 142);
+  border: 1px solid var(--border);
+  border-radius: var(--borderRadius);
+  box-shadow: 0 1rem 1rem -0.75rem var(--border);
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  position: relative;
+  overflow: hidden;
+}

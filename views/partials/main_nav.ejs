@@ -1,0 +1,60 @@
+<!--Edgar Adrian Mejia Razo Centennial College 301066027 WINTER 2020-->
+
+                          
+                          <!--Main Nav Bar Section --> 
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="/"><img src="/images/logo.png" width="90" height="55" alt="white7"></a><h4>Personal Portafolio</h4>
+
+    <!--Hamburguer button to see the menu bar on different devices --> 
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+
+        <% if (title == "Home") { %>
+          <li class="nav-item active">
+        <% } else { %> 
+        <li class="nav-item">
+        <% } %> 
+        <a class="nav-link" href="/home"><i class="fas fa-lg fa-laptop-house"></i> Home </a>
+        </li>
+
+        <% if (title == "About Me") { %>
+          <li class="nav-item active">
+        <% } else { %> 
+        <li class="nav-item">
+        <% } %> 
+          <a class="nav-link" href="/about"><i class="fas fa-info-circle"></i> About Me</a>
+        </li>
+
+        <% if (title == "Projects") { %>
+          <li class="nav-item active">
+        <% } else { %> 
+        <li class="nav-item">
+        <% } %> 
+          <a class="nav-link" href="/projects"><i class="fas fa-tags"></i> Projects </a>
+        </li>
+
+        <% if (title == "Services"){ %>
+          <li class="nav-item active">
+        <% } else { %> 
+        <li class="nav-item">
+        <% } %> 
+          <a class="nav-link" href="/services"><i class="fas fa-cogs"></i> Services </a>
+        </li>
+
+        <% if (title == "Contact Me"){ %>
+          <li class="nav-item active">
+        <% } else { %> 
+        <li class="nav-item">
+        <% } %> 
+          <a class="nav-link" href="/contact"><i class="fas fa-mobile-alt"></i> Contact Me</a>
+        </li>
+        
+        
+    </div>
+  </nav>
+
+  <!--Edgar Adrian Mejia Razo Centennial College 301066027 WINTER 2020-->
