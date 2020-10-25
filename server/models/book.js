@@ -9,7 +9,7 @@ let bookModel = mongoose.Schema({
     price: Number
 },
 {
-    collection: "book"
+    collection: "books"
 });
 
 module.exports = mongoose.model('Book', bookModel);
