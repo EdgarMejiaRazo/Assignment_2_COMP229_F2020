@@ -45,6 +45,14 @@
           <a class="nav-link" href="/services"><i class="fas fa-cogs"></i> Services </a>
         </li>
 
+        <% if (title == "Books") { %>
+        <li class="nav-item active">
+        <% } else  { %>
+        <li class="nav-item">
+        <% } %>
+          <a class="nav-link" href="/book-list"><i class="fas fa-book"></i> Books </a>
+        </li>
+
         <% if (title == "Contact Me"){ %>
           <li class="nav-item active">
         <% } else { %> 
