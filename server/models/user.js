@@ -16,11 +16,11 @@ let User = mongoose.Schema
         password: 
         {
             type: String,
-            default: '';
+            default: '',
             trim: true,
             required: 'password is required'
-        }
-        */
+        },*/
+        
        email: 
        {
             type: String,

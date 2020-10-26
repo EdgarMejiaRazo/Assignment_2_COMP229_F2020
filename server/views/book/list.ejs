@@ -11,26 +11,27 @@
 
             <% if(typeof displayName == 'string' && displayName) { %>
                 <a href="/book-list/add" class="btn btn-primary" role="button">
-                <i class="fas fa-plus-circle"></i> Add a Book</a>
+                <i class="fas fa-plus-circle"></i> Add a Contact</a>
             <% } %>
             <br>
             <table class="table table-bordered table-striped table-hover">
                 <!-- Header Row-->
                 <tr class="d-flex">
                     <% if(typeof displayName == 'string' && displayName) { %>
-                        <th class="text-center col-2">Title</th>
-                        <th class="text-center col-2">Author</th>
-                        <th class="text-center col-1">Year</th>
-                        <th class="col-4">Description</th>
-                        <th class="text-center col-1">Price</th>
+                        <th class="text-center col-2">Name</th>
+                       <!--  <th class="text-center col-2">Company</th>
+                        <th class="text-center col-1">Status</th>-->
+                        <th class="text-center col-4">Email</th>
+                        <th class="text-center col-1">Number</th>
                         <th class="text-center col-1"></th>
                         <th class="text-center col-1"></th>
                     <% } else { %>
-                        <th class="text-center col-2">Title</th>
-                        <th class="text-center col-2">Author</th>
-                        <th class="text-center col-1">Year</th>
-                        <th class="col-6">Description</th>
-                        <th class="text-center col-1">Price</th>
+                    <h4>Before entering secure area please login</h4>
+                        <!--<th class="text-center col-2">Name</th>-->
+                        <!--<th class="text-center col-2">Company</th>-->
+                        <!--<th class="text-center col-1">Status</th>-->
+                        <!--<th class="text-center col-6">Email</th>-->
+                        <!--<th class="text-center col-1">Number</th>-->
                     <% } %>
                 </tr>
 
@@ -40,24 +41,24 @@
                     <tr class="d-flex">
                         <% if(typeof displayName == 'string' && displayName) { %>
                             <td class="text-center col-2"><%= BookList[count].name %></td>
-                            <td class="text-center col-2"><%= BookList[count].author %></td>
-                            <td class="text-center col-1"><%= BookList[count].published %></td>
+                            <!-- <td class="text-center col-2"><%= BookList[count].author %></td>-->
+                            <!-- <td class="text-center col-1"><%= BookList[count].published %></td>-->
                             <td class="col-4"><%= BookList[count].description %></td>
                             <td class="text-center col-1"><%= BookList[count].price %></td>            
                             <td class="text-center col-1">
                                 <a href="/book-list/edit/<%= BookList[count]._id %>" class="btn btn-primary btn-sm">
-                                <i class="fas fa-pencil-alt"></i> Edit</a>
+                                <i class="fas fa-pencil-alt"></i> Update</a>
                             </td>
                             <td class="text-center col-1">
                                 <a href="/book-list/delete/<%= BookList[count]._id %>" class="btn btn-danger btn-sm">
                                 <i class="fas fa-trash-alt"></i> Delete</a>
                             </td>
                          <% } else { %>
-                            <td class="text-center col-2"><%= BookList[count].name %></td>
-                            <td class="text-center col-2"><%= BookList[count].author %></td>
+                           <!-- <td class="text-center col-2"><%= BookList[count].name %></td>
+                             <td class="text-center col-2"><%= BookList[count].author %></td>
                             <td class="text-center col-1"><%= BookList[count].published %></td>
                             <td class="col-6"><%= BookList[count].description %></td>
-                            <td class="text-center col-1"><%= BookList[count].price %></td>  
+                            <td class="text-center col-1"><%= BookList[count].price %></td>  -->
                          <% } %>
                     </tr>
                 <% } %>

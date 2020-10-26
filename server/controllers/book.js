@@ -18,7 +18,7 @@ module.exports.displayBookList = (req, res, next) => {
             //console.log(BookList);
 
             res.render('book/list', 
-            {title: 'Books', 
+            {title: 'Business Contact List', 
             BookList: bookList, 
             displayName: req.user ? req.user.displayName : ''});      
         }
@@ -26,7 +26,7 @@ module.exports.displayBookList = (req, res, next) => {
 }
 
 module.exports.displayAddPage = (req, res, next) => {
-    res.render('book/add', {title: 'Add Book', 
+    res.render('book/add', {title: 'Add Contact', 
     displayName: req.user ? req.user.displayName : ''})          
 }
 
@@ -66,7 +66,7 @@ module.exports.displayEditPage = (req, res, next) => {
         else
         {
             //show the edit view
-            res.render('book/edit', {title: 'Edit Book', book: bookToEdit, 
+            res.render('book/edit', {title: 'Edit Contact', book: bookToEdit, 
             displayName: req.user ? req.user.displayName : ''})
         }
     });
